@@ -4,7 +4,7 @@ def run_guessing_game
   guess= " "
  while guess
  puts "Guess a number between 1 and 6."
- guess= gets.xchomp
+ guess= gets.chomp
  number = rand(1..6).to_s
  case guess
   when number
