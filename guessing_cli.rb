@@ -4,7 +4,7 @@ def run_guessing_game
   guess= " "
  while guess
  puts "Guess a number between 1 and 6."
- guess= gets.chomp
+ guess= gets.xchomp
  number = rand(1..6).to_s
  case guess
   when number
@@ -12,7 +12,7 @@ def run_guessing_game
   when "exit"
     puts "Goodbye!"
   break
-else number != guess
+else number
     puts "The computer guessed #{number}"
     end
   end
